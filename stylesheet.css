@@ -16,10 +16,10 @@ body {
   }
 
   header { 
-      background-color: #333740;
-      opacity: 0.8;
+      background-color: black;
       height: 65px;
       width: 100%;
+      opacity: 0.8;
       color: white;
       position: fixed;
       top: 0;
@@ -62,6 +62,7 @@ body {
       margin-bottom: 10px;
       height: 500px;
       background-image: url("https://via.placeholder.com/1400x600");
+      background-size: cover;
   }
 
 
@@ -72,38 +73,94 @@ body {
 
 
 .profile-wrapper {
-    height: 500px;
+    height: 450px;
     background-color: black;
     color: white;
     padding-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.profile-heading {
-    text-align: center;
+.heading {
     font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.profile-btn-wrapper {
+.text {
+    font-size: 23px;
     text-align: center;
 }
 
-.profile-btn {
+.detail-text {
+    padding-top: 30px;
+}
+
+.btn {
     color: #37BEF0;
 }
 
-.profile-btn:hover {
+.btn:hover {
     border-bottom: 1px solid #37BEF0;
 }
 
-.profile-text {
-    padding-left: 100px;
-    font-size: 25px;
-    line-height: 300px;
-    float: left;
+
+.blog-wrapper {
+    height: 450px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
 }
 
-.profile-photo {
+.blog-message, .picture-messege {
+    width: 50%;
+    text-align: center;
+    float: left;
+    padding-left: 100px;
+}
+
+
+.blog-photo {
+    width: 25%;
     float: right;
-    margin-right: 100px;
+    margin-right: 6%;
+    margin-top: 2%;
+}
+
+
+.speech-wrapper {
+    height: 450px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.speech-messege {
+    width: 50%;
+    padding-right: 100px;
+    text-align: center;
+    float: right;
+}
+
+.speech-photo {
+    margin-top: 3%;
+    margin-left: 6%;
+    width: 35%;
+}
+
+.picture-wrapper {
+    height: 450px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.picture-photo {
+    float: right;
+    width: 35%;
+    margin-top: 3%;
+    margin-right: 6%;
 }
