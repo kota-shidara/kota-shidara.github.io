@@ -60,15 +60,17 @@ body {
   .top-wrapper {
       margin-top: 65px;
       margin-bottom: 10px;
-      height: 500px;
-      background-image: url("https://via.placeholder.com/1400x600");
+      height: 600px;
+      background-image: url(img/top_image.jpg);
       background-size: cover;
   }
 
 
   .top-heading {
-      padding: 100px 0px 0px 30px;
-      font-size: 40px;
+      padding: 5% 5% 0 0;
+      width: 53%;
+      font-size: 50px;
+      float: right;
   }
 
 
@@ -86,6 +88,7 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
 
 .text {
     font-size: 23px;
@@ -106,40 +109,40 @@ body {
 
 
 .blog-wrapper {
-    height: 450px;
-    padding-top: 20px;
-    margin-bottom: 10px;
-    background-color: black;
-    color: white;
-}
-
-.blog-message, .picture-messege {
-    width: 50%;
-    text-align: center;
-    float: left;
-    padding-left: 100px;
-}
-
-
-.blog-photo {
-    width: 25%;
-    float: right;
-    margin-right: 6%;
-    margin-top: 2%;
-}
-
-
-.speech-wrapper {
-    height: 450px;
+    height: 500px;
     padding-top: 20px;
     margin-bottom: 10px;
     background-color: #EEEEEE;
     color: black;
 }
 
+.blog-message, .picture-messege {
+    width: 52%;
+    text-align: center;
+    float: left;
+    padding-left: 5%;
+}
+
+
+.blog-photo {
+    width: 27%;
+    float: right;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+
+.speech-wrapper {
+    height: 500px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+
 .speech-messege {
-    width: 50%;
-    padding-right: 100px;
+    width: 40%;
+    padding-right: 5%;
     text-align: center;
     float: right;
 }
@@ -151,7 +154,7 @@ body {
 }
 
 .picture-wrapper {
-    height: 450px;
+    height: 500px;
     padding-top: 20px;
     margin-bottom: 10px;
     background-color: #EEEEEE;
@@ -163,4 +166,11 @@ body {
     width: 35%;
     margin-top: 3%;
     margin-right: 6%;
+}
+
+.contact-wrapper {
+    height: 300px;
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
 }
