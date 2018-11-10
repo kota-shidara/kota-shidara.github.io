@@ -1,78 +1,77 @@
 body {
     margin: 0;
     font-family: "Hiragino Kaku Gothic ProN";
-  }
-  
-  a {
-    text-decoration: none;
-  }
+}
 
-  li {
-    list-style: none;
-  }
+a {
+text-decoration: none;
+}
 
-  ul {
-      margin: 0;
-  }
+li {
+list-style: none;
+}
 
-  header { 
-      background-color: black;
-      height: 65px;
-      width: 100%;
-      opacity: 0.8;
-      color: white;
-      position: fixed;
-      top: 0;
-      z-index: 10;
-  }
+ul {
+    margin: 0;
+}
 
-  .header-logo {
-      float: left;
-      margin-left: 30px;
-      line-height: 65px;
-      display: block;
-      color: white;
-      font-size: 23px;
-  }
+header { 
+    background-color: black;
+    height: 65px;
+    width: 100%;
+    opacity: 0.8;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
 
-  .header-list {
-      float: right;
-      padding: 0 10px;
-      margin-right: 15px;
-  }
-
-  .header-list li {
+.header-logo {
     float: left;
-    margin: 0 15px;
-  }
+    margin-left: 30px;
+    line-height: 65px;
+    display: block;
+    color: white;
+    font-size: 23px;
+}
 
-  .header-list a {
-      color: white;
-      display: block;
-      line-height: 65px;
-  }
+.header-list {
+    float: right;
+    padding: 0 10px;
+    margin-right: 15px;
+}
 
-  .header-logo:hover,.header-list a:hover {
-      color: #bfbfbf;
-      transition: all 0.5s;
-  }
+.header-list li {
+float: left;
+margin: 0 15px;
+}
+
+.header-list a {
+    color: white;
+    display: block;
+    line-height: 65px;
+}
+
+.header-logo:hover,.header-list a:hover {
+    color: #bfbfbf;
+    transition: all 0.5s;
+}
 
 
-  .top-wrapper {
-      margin-top: 65px;
-      margin-bottom: 10px;
-      height: 600px;
-      background-image: url(img/top_image.jpg);
-      background-size: cover;
-  }
+.top-wrapper {
+    margin-top: 65px;
+    height: 600px;
+    background-image: url(img/top_image.jpg);
+    background-size: cover;
+}
 
 
-  .top-heading {
-      padding: 5% 5% 0 0;
-      width: 53%;
-      font-size: 50px;
-      float: right;
-  }
+.top-heading {
+    padding: 5% 3% 0 0;
+    width: 60%;
+    font-size: 50px;
+    float: right;
+}
 
 
 .landing-profile-wrapper {
@@ -80,7 +79,6 @@ body {
     background-color: black;
     color: white;
     padding-top: 20px;
-    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -91,7 +89,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -109,7 +107,7 @@ body {
 .text-right {
     font-size: 23px;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 25%;
 }
 
 .detail-text-left {
@@ -121,8 +119,9 @@ body {
 .detail-text-right {
     padding-top: 30px;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 25%;
 }
+
 .btn {
     color: #37BEF0;
 }
@@ -135,61 +134,65 @@ body {
 .landing-blog-wrapper {
     height: 500px;
     padding-top: 20px;
-    margin-bottom: 10px;
     background-color: #EEEEEE;
     color: black;
 }
 
-.landing-blog-message, .landing-picture-messege {
-    width: 52%;
+.landing-blog-messege, .landing-picture-messege {
+    width: 60%;
     text-align: center;
     float: left;
-    padding-left: 4%;
 }
 
 
 .landing-blog-photo {
-    width: 27%;
+    width: 40%;
+    margin-top: 20px;
     float: right;
-    margin-right: 11%;
-    margin-top: 3%;
+    text-align: center;
 }
 
+.landing-blog-photo-img {
+    width: 75%;
+}
 
 .landing-speech-wrapper {
     height: 500px;
     padding-top: 20px;
-    margin-bottom: 10px;
     background-color: black;
     color: white;
 }
 
 .landing-speech-messege {
-    width: 40%;
-    padding-right: 4%;
+    width: 50%;
     text-align: center;
     float: right;
 }
 
 .landing-speech-photo {
-    margin-top: 3%;
-    margin-left: 13%;
-    width: 35%;
+    width: 50%;
+    float: left;
+}
+
+.landing-speech-photo-img {
+    width: 100%;
 }
 
 .landing-picture-wrapper {
     height: 500px;
     padding-top: 20px;
-    margin-bottom: 10px;
     background-color: #EEEEEE;
     color: black;
 }
 
 .landing-picture-photo {
+    margin-top: 20px;
+    width: 40%;
     float: right;
-    width: 35%;
-    margin-top: 3%;
-    margin-right: 6%;
+}
+
+.landing-picture-photo-img {
+    width: 100%;
 }
 
 .contact-wrapper {
