@@ -21,17 +21,20 @@ ul {
 }
 
 .content-page-title {
-
+    font-size: 60px;
+    border-bottom: 2px solid black;
 }
 
 .content-section-title {
-
+    font-size: 32px;
+    border-bottom: 1px solid black;
 }
 
 .content-key-phrase {
+    font-size: 44px;
 
 }
 
 .content-text {
-
+    font-size: 18px;
 }
