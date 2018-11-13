@@ -22,17 +22,38 @@ ul {
 
 .content-page-title {
     font-size: 60px;
-    border-bottom: 2px solid black;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.content-page-title::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 48px;
+    height: 4px;
+    background-color: rgb(29, 182, 212);
 }
 
 .content-section-title {
     font-size: 32px;
-    border-bottom: 1px solid black;
+    padding-top: 20px;
+}
+
+.content-section-title::after {
+    content: "";
+    display: block;
+    border-radius: 4px;
+    width: 140px;
+    height: 4px;
+    background-color: rgb(29, 182, 212);
 }
 
 .content-key-phrase {
     font-size: 44px;
-
+    margin: 20px;
 }
 
 .content-text {
