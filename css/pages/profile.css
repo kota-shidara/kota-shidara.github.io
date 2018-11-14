@@ -12,6 +12,10 @@
     width: 80%;
 }
 
+.profile-history-table td {
+    padding-right: 15px;
+}
+
 .profile-text-container {
     margin-left: 60px;
     margin-right: 60px;
