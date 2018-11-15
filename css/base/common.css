@@ -37,12 +37,12 @@ ul {
     background-color: rgb(29, 182, 212);
 }
 
-.content-section-subtitle {
+.content-section-title {
     font-size: 32px;
     padding-top: 20px;
 }
 
-.content-section-subtitle::after {
+.content-section-title::after {
     content: "";
     display: block;
     border-radius: 4px;
@@ -51,7 +51,7 @@ ul {
     background-color: rgb(29, 182, 212);
 }
 
-.content-section-key-phrase {
+.content-section-subtitle {
     font-size: 44px;
     margin: 20px;
 }
