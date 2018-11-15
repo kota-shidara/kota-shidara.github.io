@@ -1,0 +1,41 @@
+.profile-main {
+    background-color: #EEEEEE;
+    padding-bottom: 50px;
+}
+
+.profile-top-photo {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.profile-top-photo-image {
+    width: 80%;
+}
+
+.profile-history-table td {
+    padding-right: 15px;
+}
+
+.profile-text-container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.profile-section-wrapper {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 60px;
+    background-color: white;
+}
+
+.profile-history-wrapper {
+    height: 380px;
+}
+
+.profile-zayunomei-wrapper {
+    height: 360px;
+}
+
+.profile-motto-wrapper {
+    height: 330px;
+}
