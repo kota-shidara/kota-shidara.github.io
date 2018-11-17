@@ -20,6 +20,18 @@ ul {
     margin: 0 auto;
 }
 
+.content-section-wrapper {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 60px;
+    background-color: white;
+}
+
+.content-text-container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 .content-page-title {
     font-size: 60px;
     text-align: center;
