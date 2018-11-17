@@ -20,6 +20,11 @@ ul {
     margin: 0 auto;
 }
 
+.content-text-container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 .content-page-title {
     font-size: 60px;
     text-align: center;
