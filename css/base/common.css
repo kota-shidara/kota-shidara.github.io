@@ -46,7 +46,7 @@ ul {
     border-radius: 4px;
     width: 48px;
     height: 4px;
-    background-color: rgb(29, 182, 212);
+    background-color: #1DB6DA;
 }
 
 .content-section-title {
@@ -60,7 +60,7 @@ ul {
     border-radius: 4px;
     width: 140px;
     height: 4px;
-    background-color: rgb(29, 182, 212);
+    background-color: #1DB6DA;
 }
 
 .content-section-subtitle {
@@ -70,4 +70,12 @@ ul {
 
 .content-section-text {
     font-size: 18px;
+}
+
+.content-text-link {
+    color: #1DB6DA;
+}
+
+.content-text-link:hover {
+    border-bottom: 1px solid #1DB6DA;
 }

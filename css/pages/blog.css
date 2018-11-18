@@ -3,109 +3,90 @@
     padding-bottom: 100px;
 }
 
-.blog-concept-wrapper {
-    height: 324px;
-}
-
-.blog-ranking-wrapper {
-    height: 1450px;
-}
-
 .blog-pickup-container {
-    margin: 0 60px 0 60px;
+    margin: 0 60px;
 }
 
-.blog-pickup-top3 {
+.blog-pickup-main {
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: solid 1px #dde5e8;
 }
 
-.blog-pickup-top3:nth-child(3n) {
-    border-bottom: solid 1px #dde5e8;
+.blog-pickup-main-text-container {
+    margin-right: 60px;
+    width: 100%;
 }
 
-.blog-pickup-top3-text-container {
-    width: 60%;
-}
-
-.blog-pickup-top3-rank {
+.blog-pickup-main-rank {
     font-size: 30px;
 }
 
-.blog-pickup-top3-title {
+.fas {
+    color: #FBE178;
+}
+
+.blog-pickup-main-title {
     font-size: 24px;
     color: black;
 }
 
-.blog-pickup-top3-title:hover {
+.blog-pickup-main-title:hover {
     border-bottom: 2px solid black;
 }
 
-.blog-pickup-top3-image-container {
+.blog-pickup-main-image-container {
     text-align: right;
-    width: 40%;
 }
 
-.blog-pickup-top3-image {
+.blog-pickup-main-image {
     width: 330px;
     height: 240px;
     object-fit: cover;
 }
 
-.blog-pickup-top456 {
+.blog-pickup-sub {
     display: flex;
 }
 
-.blog-pickup-top456-container {
+.blog-pickup-sub-container {
     width: 33.3%;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 20px;
+    border-top: solid 1px #dde5e8;
     border-right: solid 1px #dde5e8;
     border-bottom: solid 1px #dde5e8;
 }
 
-.blog-pickup-top456-container:nth-child(3n+1) {
+.blog-pickup-sub-container:nth-child(3n+1) {
     padding-left: 0px;
 }
 
-.blog-pickup-top456-container:nth-child(3n) {
+.blog-pickup-sub-container:nth-child(3n) {
     padding-right: 0px;
     border-right: none;
 }
 
-.blog-pickup-top456-each-title-wrapper {
+.blog-pickup-sub-each-title-wrapper {
     height: 80px;
 }
 
-.blog-pickup-top456-each-rank {
+.blog-pickup-sub-each-rank {
     font-size: 25px;
 }
 
-.blog-pickup-top456-each-title {
+.blog-pickup-sub-each-title {
     color: black;
 }
 
-.blog-pickup-top456-each-title:hover {
+.blog-pickup-sub-each-title:hover {
     border-bottom: 1px solid black;
 }
 
-.blog-pickup-top456-image {
+.blog-pickup-sub-image {
     width: 100%;
     height: 240px;
     object-fit: cover;
-}
-
-.blog-messege-wrapper {
-    height: 180px;
-}
-
-.content-section-text a {
-    color: rgb(29, 182, 212);
-}
-
-.content-section-text a:hover {
-    border-bottom: 1px solid rgb(29, 182, 212);
 }
