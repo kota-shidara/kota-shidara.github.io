@@ -23,8 +23,16 @@
     font-size: 30px;
 }
 
-.fas {
-    color: #FBE178;
+.fas-gold {
+    color: #FFD700;
+}
+
+.fas-silver {
+    color: #C0C0C0;
+}
+
+.fas-bronze {
+    color: #C47222;
 }
 
 .blog-pickup-main-title {
