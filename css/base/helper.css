@@ -45,3 +45,51 @@
 .pbl {
     padding-bottom: 40px;
 }
+
+.mrs {
+    margin-right: 10px;
+}
+
+.mrm {
+    margin-right: 20px;
+}
+
+.mrl {
+    margin-right: 40px;
+}
+
+.mls {
+    margin-left: 10px;
+}
+
+.mlm {
+    margin-left: 20px;
+}
+
+.mll {
+    margin-left: 40px;
+}
+
+.prs {
+    padding-right: 10px;
+}
+
+.prm {
+    padding-right: 20px;
+}
+
+.prl {
+    padding-right: 40px;
+}
+
+.pls {
+    padding-left: 10px;
+}
+
+.plm {
+    padding-left: 20px;
+}
+
+.pll {
+    padding-left: 40px;
+}
