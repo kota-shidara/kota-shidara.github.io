@@ -15,6 +15,7 @@
 .speech-text-right {
     width: 40%;
     border-left: solid 6px #dde5e8;
+    margin-left: 10px;
 }
 
 .speech-script-wrapper {
