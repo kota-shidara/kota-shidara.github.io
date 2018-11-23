@@ -1,0 +1,40 @@
+.painting-main {
+    background-color: #EEEEEE;
+    padding-bottom: 50px;
+}
+
+.painting-table-container {
+    background-color: white;
+}
+
+.painting-table {
+    border-collapse: collapse;
+}
+
+.painting-table-left {
+    border-right: solid 40px #EEEEEE;
+}
+
+.painting-table-right {
+    border-left: solid 40px #EEEEEE;
+}
+
+.painting-title {
+    font-size: 36px;
+    width: 50%;
+    border-top: solid 20px #EEEEEE;
+}
+
+.painting-text {
+    font-size: 16px;
+}
+
+.painting-image-cell {
+    text-align: center;
+    border-bottom: solid 30px #EEEEEE;
+}
+
+.painting-image {
+    margin-top: 40px;
+    width: 50%;
+}
