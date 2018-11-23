@@ -1,0 +1,47 @@
+.speech-main {
+    background-color: #EEEEEE;
+    padding-bottom: 50px;
+}
+
+.speech-text-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.speech-text-left {
+    width: 60%;
+    border-left: solid 6px #dde5e8;
+}
+
+.speech-text-right {
+    width: 40%;
+    border-left: solid 6px #dde5e8;
+    margin-left: 10px;
+}
+
+.speech-script-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Times New Roman', serif;
+}
+
+.speech-script-title {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.speech-script-name {
+    text-align: right;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.speech-script-text {
+    text-indent: 5em;
+    text-align: justify;
+    line-height: 200%;
+    margin-top: 40px;
+    font-size: 20px;
+}
