@@ -47,4 +47,5 @@
     max-width: 450px;
     max-height: 400px;
     object-fit: cover;
+    cursor: pointer;
 }
