@@ -35,7 +35,12 @@
     border-bottom: solid 30px #EEEEEE;
 }
 
-.painting-image {
+.painting-image-verticle {
     margin-top: 40px;
     width: 50%;
+}
+
+.painting-image-horizontal {
+    margin-top: 40px;
+    width: 80%;
 }
