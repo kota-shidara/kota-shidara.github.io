@@ -1,46 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
 .painting-main {
     background-color: #EEEEEE;
     padding-bottom: 50px;
 }
 
-.painting-table-container {
+.painting-container {
     background-color: white;
+    padding: 20px;
 }
 
-.painting-table {
-    border-collapse: collapse;
+.painting-column {
+    width: 50%;
+    border-top: solid 30px #EEEEEE;
+    border-bottom: solid 30px #EEEEEE;
+    border-right: solid 30px #EEEEEE;
 }
 
-.painting-table-left {
-    border-right: solid 40px #EEEEEE;
-}
-
-.painting-table-right {
-    border-left: solid 40px #EEEEEE;
+.painting-column:nth-child(2n) {
+    border-right: none;
+    border-left: solid 30px #EEEEEE;
 }
 
 .painting-title {
     font-size: 36px;
-    width: 50%;
-    border-top: solid 20px #EEEEEE;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .painting-text {
-    font-size: 16px;
-    vertical-align: top;
+    height: 120px;
 }
 
-.painting-image-cell {
-    text-align: center;
-    border-bottom: solid 30px #EEEEEE;
+.painting-image-container {
+    line-height: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.painting-image-verticle {
-    margin-top: 40px;
-    width: 50%;
-}
-
-.painting-image-horizontal {
-    margin-top: 40px;
-    width: 80%;
+.painting-image {
+    max-width: 450px;
+    max-height: 400px;
+    object-fit: cover;
 }
