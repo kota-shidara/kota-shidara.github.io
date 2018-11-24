@@ -27,6 +27,7 @@
 
 .painting-text {
     font-size: 16px;
+    vertical-align: top;
 }
 
 .painting-image-cell {
