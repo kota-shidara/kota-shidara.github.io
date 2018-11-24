@@ -47,5 +47,31 @@
     max-width: 450px;
     max-height: 400px;
     object-fit: cover;
-    cursor: pointer;
+    cursor: zoom-in;
+}
+
+#mask {
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+.modal-painting-wrapper_1, .modal-painting-wrapper_2, .modal-painting-wrapper_3, .modal-painting-wrapper_4 {
+    display: none;
+    position: absolute;
+}
+
+.modal-painting {
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: cover;
+    position: relative;
+    margin: 0;
+    z-index: 2;
 }
