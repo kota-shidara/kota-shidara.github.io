@@ -60,6 +60,7 @@
     right: 0;
     display: none;
     z-index: 1;
+    cursor: zoom-out;
 }
 
 .modal-painting-wrapper_1, .modal-painting-wrapper_2, .modal-painting-wrapper_3, .modal-painting-wrapper_4 {

@@ -16,9 +16,6 @@ $(function() {
                     'top' : t - (chl - chs)
                 });
             }
-            $('#mask').hover(function() {
-                $('#mask').css('cursor', 'zoom-out');
-            });
             $('#mask').click(function() {
                 $('#mask').fadeOut();
                 $('#modal-painting-wrapper_' + number).fadeOut();
