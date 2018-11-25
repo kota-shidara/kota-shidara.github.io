@@ -63,7 +63,7 @@
     cursor: zoom-out;
 }
 
-.modal-painting-wrapper_1, .modal-painting-wrapper_2, .modal-painting-wrapper_3, .modal-painting-wrapper_4 {
+.modal-painting-wrapper {
     display: none;
     position: absolute;
 }

@@ -1,5 +1,4 @@
 $(function() {
-
     for (let number = 1; number <= 13; number ++) {
         $('#modal-show_' + number).click(function() {
             $('#modal-painting-wrapper_' + number).fadeIn();
@@ -22,5 +21,4 @@ $(function() {
             });
         });
     }
-
 });
