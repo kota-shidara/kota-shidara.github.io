@@ -4,6 +4,11 @@ $(function() {
             $('#modal-painting-wrapper_' + number).fadeIn();
             $('#mask').fadeIn();
             modalResize();
+            $('#mask').click(function() {
+                $('#mask').fadeOut();
+                $('#modal-painting-wrapper_' + number).fadeOut();
+            });
+            
             function modalResize() {
                 let w = $(window).width();
                 let t = $('#modal-show_' + number).offset().top;
@@ -15,10 +20,6 @@ $(function() {
                     'top' : t - (chl - chs)
                 });
             }
-            $('#mask').click(function() {
-                $('#mask').fadeOut();
-                $('#modal-painting-wrapper_' + number).fadeOut();
-            });
         });
     }
 });
