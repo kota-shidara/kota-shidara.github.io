@@ -16,8 +16,8 @@ $(function() {
                 let chl = $('#painting-modal-wrapper_' + number).outerHeight();
                 let chs = $('#painting-modal-show_' + number).outerHeight();
                 $('#painting-modal-wrapper_' + number).css( {
-                    'left' : (w - cw) / 2 ,
-                    'top' : t - (chl - chs)
+                    'left': (w - cw) / 2,
+                    'top': t - (chl - chs)
                 });
             }
         });
