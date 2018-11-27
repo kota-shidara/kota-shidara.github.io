@@ -60,6 +60,5 @@
     max-height: 600px;
     object-fit: cover;
     position: relative;
-    margin: 0;
     z-index: 2;
 }
