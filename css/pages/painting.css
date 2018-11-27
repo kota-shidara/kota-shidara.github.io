@@ -50,7 +50,7 @@
     cursor: zoom-in;
 }
 
-.modal-painting-wrapper {
+.painting-modal-wrapper {
     display: none;
     position: absolute;
 }
