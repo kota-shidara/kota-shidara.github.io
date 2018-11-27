@@ -55,7 +55,7 @@
     position: absolute;
 }
 
-.modal-painting {
+.painting-modal-image {
     max-width: 600px;
     max-height: 600px;
     object-fit: cover;
