@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+.painting-main {
+    background-color: #EEEEEE;
+    padding-bottom: 50px;
+}
+
+.painting-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.painting-column {
+    width: 50%;
+    border-top: solid 30px #EEEEEE;
+    border-bottom: solid 30px #EEEEEE;
+    border-right: solid 30px #EEEEEE;
+}
+
+.painting-column:nth-child(2n) {
+    border-right: none;
+    border-left: solid 30px #EEEEEE;
+}
+
+.painting-title {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.painting-text {
+    height: 120px;
+}
+
+.painting-image-container {
+    line-height: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.painting-image {
+    max-width: 450px;
+    max-height: 400px;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.painting-modal-wrapper {
+    display: none;
+    position: absolute;
+}
+
+.painting-modal-image {
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}

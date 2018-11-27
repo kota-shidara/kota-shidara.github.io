@@ -79,3 +79,16 @@ ul {
 .content-text-link:hover {
     border-bottom: 1px solid #1DB6DA;
 }
+
+#mask {
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+    cursor: zoom-out;
+}
