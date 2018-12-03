@@ -92,3 +92,11 @@ ul {
     z-index: 1;
     cursor: zoom-out;
 }
+
+.is-hidden {
+    display: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
