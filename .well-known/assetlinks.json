@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.marsphotos",
+    "sha256_cert_fingerprints":
+    ["72:86:BA:56:01:12:BD:A6:00:C9:AD:D7:53:FE:69:3E:8C:68:41:01:31:73:C1:7F:24:AC:18:F5:4E:D7:5C:89"]
+  }
+}]
