@@ -120,8 +120,8 @@
 
 ### 技術系社内勉強会の開催
 
-- 以下内容の勉強会を開催し講師を務めた。
-  - SOLID原則、各種アルゴリズム（二分探索、DP、グラフアルゴリズム）、教師あり学習（scikit-learn）、GAS
+- 以下内容の勉強会を開催し講師を務めた（リンクは発表資料）。
+  - [SOLID原則](https://speakerdeck.com/dara_dara/ri-chang-tozhao-rasihe-waseteli-jie-surusolidyuan-ze)、各種アルゴリズム（二分探索、DP、グラフアルゴリズム）、[教師あり学習（scikit-learn）](https://colab.research.google.com/drive/1NECwEotE8TD__Usse0vCexMSBXOWLXkh?usp=sharing)、[GAS](https://flamers.notion.site/GAS-3302cf0d4eae413b9d08d0d3cab58c66?source=copy_link)
 
 ## UI/UX企画
 - マッチングアプリにおける企画からUIデザイン・実装までを行い、数値的な成果をあげた。
