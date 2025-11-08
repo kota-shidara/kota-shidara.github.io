@@ -58,78 +58,45 @@
 - 2023/4: [メタバースマッチングアプリ Memotia](https://memotia.com/)をリリース。技術面で事業をリードしつつ、採用・マネジメントを行い、10名程度のエンジニアチームを組成。
 - 2025/11現在: 集客コストを上回るLTVを獲得することに成功。累計数万人が利用。
 
-
-## 技術的活動
-### サーバー
+## サーバー
 - モデル設計やクライアントとの連携に関して、基本的に自分とメンバーで設計に携わり、実装やアサインしたissueのレビューは常に行っていました。
 
-#### ポリモーフィックなモデル設計
+### ポリモーフィックなモデル設計
 - UserとGuestの2つの認証方法を、重複したコード少なく実装するために、ポリモーフィックなモデル設計を行いました。
 
-#### Apple/Googleのサブスクリプション実装
+### Apple/Googleのサブスクリプション実装
 - iOSとAndroidのクライアントライブラリとサーバー通知の仕様を把握し、Rails/iOS/Androidの実装とディレクションを行いました。（実装は主にAndroidを担当）
 - リリース後の実データを見て、公式ドキュメントの理解通りデータが記録されているかを検証しました（[iOS版](https://zenn.dev/link/comments/4ea2cd272e3784), [Android版](https://zenn.dev/link/comments/1fa236836939ed)。
 
+### AWS Lambdaを利用した並列実行基盤の作成
+- RailsでのMiniMagick処理が並列化できず、1分に150人（要件）がアクセスすると全体で5分を超えていました。
+- ボトルネックをLambdaに切り出して並列実行を実現。控えていた大規模なプロモーションに耐えうる構成としました。
 
-<details>
-<summary>Appleでサインイン機能の実装のサーバーの調査と、ネイティブアプリの実装</summary>
+### その他
+- Appleでサインイン機能の実装とディレクション（iOSを自分が実装, Railsをメンバーへ依頼） [調査ログ](https://zenn.dev/dara/scraps/e659306593b8e7)
 
-- 公式ドキュメントやデモアプリを確認し、仕様を調査した上で実装をディレクションしました。
-- サーバーサイドの実装はメンバーに依頼しました。
-- iOSの実装は自分が担当しました。
-- [調査ログ](https://zenn.dev/dara/scraps/e659306593b8e7)
-</details>
+## インフラ
+### AWS CDKを用いて、ECS on EC2でWebRTCサーバーの構築
 
-<details>
-<summary>AWS Lambdaを利用した並列実行基盤の作成</summary>
+- AWS CDKを用いて、ECS on EC2の利用したサーバーを構築と、CodePipeline, CodeBuildを用いたCIの構築を行いました。
+- WebRTC通信を行いており、大量のUDPポートを公開する必要がありました。Fargateにする場合、これをNLBを構築して実現する必要があり、リリースまでの期日を考慮すると学習コストの観点から実現可能性が低いと判断しました。EC2であればセキュリティグループでポートレンジを開放することで実現できるため、その手段を選択しました。
 
-- 大規模なプロモーションをかけるタイミングで、1人あたり15秒ほどかかる処理をサーバーが1分に150人を処理できる体制を構築する必要がありました。
-- Railsでの並列実行において、mini_magicでの画像生成部分が並列に処理されていない挙動を示した結果、全員を処理するのに5分以上かかっていました。
-- そこでmini_magic利用部分をAWS Lambdaに移行することで並列化を実現し、結果目標の1分以内で完了することを達成しました。
-</details>
+### その他
+- [AWS WAF](https://aws.amazon.com/jp/waf/)を用いて、海外からの不正アクセスを排除しました。
+- ECS on Fargate構成のRailsサーバーのIaC化をディレクションしました（実装はメンバーが担当）。
+- ElasticBeanstalkを利用したサーバー構築を3サービスほど主担当として実装しました（IaC導入以前）。
 
-### インフラ
-<details>
-<summary>AWS CDKを用いて、ECS on EC2でWebRTCサーバーのデプロイ</summary>
+## クライアント（モバイル・Unity）
+### Unityとモバイルを連携させる技術選定
 
-- AWS CDK（TypeScriptで実装）を用いて、ECS on EC2の利用したサーバーをリリースしました。
-- CodePipeline, CodeBuildを用いたCIの構築も行っています。
-- 実装期間が1週間という非常に短い期間の中で実装するという制約がありました。
-- 運用していたサービスのRailsサーバーはFargateで構築されていましたが、今回はEC2でデプロイしました。
-- WebRTC通信を行いたサーバーであり、大量のUDPポートを公開する必要がありました。Fargateにする場合、これをNLBを構築して実現する必要があり、学習コストの観点から実現可能性が低いと判断しました。EC2であればセキュリティグループでポートレンジを開放することで実現できるため、その手段を選択しました。
+- Unity単体でのアプリではなく、モバイルアプリのUIとUnityが共存したアプリを開発するため、Unity as a Libraryという仕組みを取り入れました。[技術調査ログiOS版](https://zenn.dev/flamers/articles/3cd8f4781b4892), [技術調査ログAndroid版](https://zenn.dev/flamers/articles/aeadd5c721a0d6)
+- 初期は工数削減のためFlutterで検証を開始しましたが、致命的な技術的問題に遭遇し、3週間でネイティブへ方針転換をしました。Unityと連携させるという特殊点を鑑み、初手からネイティブでの実装を選択したほうが良かった可能性があると反省している点です。
+- 既存でVRとPCプラットフォームで動作していたアプリを、開発期間2.5ヶ月でiOS/Androidともに審査を通過させ、リリースしました。
 
-</details>
-
-<details>
-<summary>その他の経験</summary>
-- [AWS WAF](https://aws.amazon.com/jp/waf/)を用いた不正アクセスの排除
-- ECS on FargateのIaC構築のディレクション（自分以外のメンバーが主担当）
-- ElasticBeanstalkを利用したデプロイも3サービスほど自分が担当して実施（IaC導入以前）
-</details>
-
-### モバイル
-<details>
-<summary>Unityとモバイルを連携させる技術選定を行い、ストアリリースまで実施</summary>
-
-- Unity単体でのアプリではなく、モバイルアプリのUIとUnityが共存したアプリを開発するため、Unity as a Libraryという仕組みを取り入れました。
-  - [技術調査ログiOS版](https://zenn.dev/flamers/articles/3cd8f4781b4892), 
-  - [技術調査ログAndroid版](https://zenn.dev/flamers/articles/aeadd5c721a0d6)
-- 初期は工数削減のためFlutterで検証を開始しましたが、致命的な技術的問題に遭遇し、3週間でネイティブへの方針転換をしました。Unityと連携させるという特殊点を鑑み、初手からネイティブでの実装を選択したほうが良かった可能性があると反省している点です。
-- 既存としてVRとPCプラットフォームで動作していたアプリを、開発期間2.5ヶ月でiOS/Androidともに審査を通過させ、リリースしました。
-
-</details>
-
-### Unity
-
-<details>
-<summary>
-マルチプラットフォームVRアプリ開発の技術選定からリリースまで
-</summary>
-
+### マルチプラットフォームVRアプリ開発の技術選定
 - Oculus Integration等のOculusに特化したSDKではなく、多様なVR機器に対応できるOpenXR, Unity XR Interaction Toolkitを選定しました。
 - 当時はVR開発環境も情報が少なく環境も変化していた中で、VR系の開発を行う知人やX上で見かけた方にDMを送りMTGを複数件設定しました。
 - Oculus, HTC Vive, Valve Index, Pico等多様なVRデバイスに対してアプリをリリースしました。
-</details>
 
 ### その他技術領域
 
