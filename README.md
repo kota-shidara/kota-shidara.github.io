@@ -17,31 +17,18 @@
 - メンバーに対しては、誠実に向き合い、心理的安全性高く、開発を楽しいと思ってもらいたいという気持ちで接してきました。楽しく働くチームの一翼を担えると思います。
 
 # 技術スタック
-## 言語
+## 言語/フレームワーク
 - プロダクションのコードを書いた経験があるもの
-  - Ruby（7年）
-  - C#（4年）
-  - Kotlin（2年）
-  - Swift（2年）
+  - Ruby / Ruby on Rails（7年）
+  - C# / Unity（4年）
+  - Kotlin / Jetpack Compose（2年）
+  - Swift / SwiftUI（2年）
 - そこそこ触ったことがあるもの
-  - Python（卒論の機械学習、numpy、pandas、scikit-learn / Flask / アルゴリズム実装 / ROS 2）
-  - Go（プロダクションでWebRTCを用いたサーバー構築を主にコードレビューとバグFIXで担当）
-  - JavaScript（プロダクションでRailsのStimulusで実装等）
-  - TypeScript（プロダクションでのAWS CDKで利用）
+  - Python（卒論の画像キャプション、numpy、pandas、scikit-learn / Flask / アルゴリズム実装 / ROS 2）
+  - Golang（プロダクションでWebRTCを用いたサーバー構築を主にコードレビューとバグFIXで担当）
+  - JavaScript、TypeScript（プロダクションでRailsのStimulus、GAS、AWS CDKの実装で利用）
 - かじった程度
-  - Dart（Flutterの技術検証で学習）
-
-## フレームワーク/ツール
-- プロダクションのコードを書いた経験があるもの
-  - Ruby on Rails（7年）
-  - Unity（4年）
-  - Jetpack Compose（2年）
-  - SwiftUI（2年）
-- かじった程度
-  - Kubernetes（プライベートで学習。Pod、Service、Deployment等の簡単な理解）
-  - ROS 2（プライベートで学習）
-  - Flutter（技術検証程度）
-  - Flask（卒論で簡単なサーバーを構築）
+  - Dart / Flutter（技術検証程度）
 
 ## クラウドインフラ
 - AWS（5年）
@@ -53,7 +40,11 @@
 
 ## その他
 - GitHub Actions（実務で利用）
-- Docker（日常的に利用）
+- Docker（実務で利用）
+- MySQL（実務で利用）
+- Kubernetes（プライベートで学習。Pod、Service、Deployment等の簡単な理解）
+- Git, GitHub（実務で利用）
+- Dify（実務で利用）
 - Figma（利用歴: 半年）
 
 # 株式会社Flamers（2019/8 - 2025/10）
@@ -116,11 +107,11 @@
 - DevinやClaudeCodeの活用を促すMTGを設定し、その場でのハンズオンの実施やプロンプト例などの自作ドキュメントを配布。ほぼ全てのメンバーが利用し、さらにrulesの整備も活性化した。
 - 使用感の振り返りMTGを実施し、Devinに関してはフィードバック内容を開発元に送信した。
 
-### モチベーション向上のための会議体の見直し
+### スクラムの導入と定期的な見直し
 
-- 企画と開発に分断を感じたため、プロジェクト毎にPM・デザイナー・エンジニアでショートなMTGを週2回ほど開催。
-- 結果、コミュニケーション頻度が増え、意図の伝達がスムーズになり、エンジニアメンバーがより前向きに企画の実装に向き合えるようになった。
-- スクラムの振り返りフォーマットを、KPTから[Fun Done Learn](https://www.ogis-ri.co.jp/otc/hiroba/others/ActivityPocket/FunDoneLearn.html)に切り替えて、より明るい雰囲気にすることを模索した。
+- スクラム開発を導入し、スプリントプランニング、デイリースクラム等のイベントを定着させた。
+- 企画と開発に分断を感じたため、プロジェクト毎にPM・デザイナー・エンジニアでショートなMTGを週2回ほど開催。結果、コミュニケーション頻度が増え、意図の伝達がスムーズになり、エンジニアメンバーがより前向きに企画の実装に向き合えるようになった。
+- スプリントレトロスペクティブのフォーマットを、KPTから[Fun Done Learn](https://www.ogis-ri.co.jp/otc/hiroba/others/ActivityPocket/FunDoneLearn.html)に切り替えて、より明るい雰囲気にすることを模索した。
 
 ### 開発合宿の企画
 
