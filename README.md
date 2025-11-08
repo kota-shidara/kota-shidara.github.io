@@ -6,26 +6,58 @@
 
 期間 | 内容
 --- | ---
-2022/3 | 東京大学工学部社会基盤学科 卒業
-2019/8~現在 | 株式会社Flamers 共同創業
-2017/10~2019/6 | 株式会社ラビッツ ビジネス→エンジニアインターン
-2016/4 | 東京大学理科一類 入学
+2019/8 - 2025/10 | 株式会社Flamers 共同創業 / CTO
+2017/10 - 2019/6 | ビジネス・エンジニア長期インターン 1社
+2016/4 - 2022/3 | 東京大学理科一類 入学 → 工学部社会基盤学科 卒業（2年間の休学）
 
-# 株式会社Flamers（2019/8~現在）
+# 技術スタック
+## 言語
+- プロダクションのコードを書いた経験があるもの
+  - Ruby（7年）
+  - C#（4年）
+  - Kotlin（2年）
+  - Swift（2年）
+- そこそこ触ったことがあるもの
+  - Python（卒論の機械学習・Flaskでのサーバー構築・アルゴリズム実装・ROS 2）
+  - Go（プロダクションの一部サーバーで利用・主にコードレビューとバグFIXを担当）
+  - JavaScript（プロダクションでRailsのStimulusで実装等）
+  - TypeScript（プロダクションでのAWS CDKで利用）
+- かじった程度
+  - Dart（Flutterの技術検証で学習）
+
+## フレームワーク/ツール
+- プロダクションのコードを書いた経験があるもの
+  - Ruby on Rails（7年）
+  - Unity（4年）
+  - Jetpack Compose（2年）
+  - SwiftUI（2年）
+- かじった程度
+  - Kubernetes（プライベートで学習）
+  - ROS 2（プライベートで学習）
+  - Flutter（アプリモックを作成した程度）
+  - Flask（卒論で利用）
+
+## クラウドインフラ
+- AWS（5年）
+  - EC2, ECS, Fargate, Lambda等の基本的なサービスの構築・運用経験
+  - CodePipeline, CodeBuild等を利用したCI構築
+  - AWS CDKでのIaC構築
+
+## その他
+- GitHub Actions（実務で利用）
+- Docker（日常的に利用）
+- Figma（半年）
+
+# 株式会社Flamers（2019/8 - 2025/10）
 ## 活動概要
-- 2019/8: 大学在学中に友人2人と共同創業
-  - 学生当時抱えていた就活の違和感にフォーカスし、人々がやりたいことを育てられることをミッションにチームを組成しました。
+- 2019/8: 大学在学中に、就活の課題感を起点として友人2人と共同創業。
 - 2019/11: Heart Driven Fund（現Dawn Capital, 株式会社アカツキCVC）より資金調達を実施 [（プレスリリース）](https://prtimes.jp/main/html/rd/p/000000001.000053336.html)
-- 2020/6: 長期インターン口コミサイトVoilをリリース
-  - 企画立案やグロースハック等のPM業務や、UIデザイン・実装を担当してリリースしました。
-  - リリース後にはさらに、企業側への営業や学生側のキャリアアドバイザー業務に注力し、黒字化を実現しました。
-- 2022/10: ANRI, basepartners等を引き受け先とした1億円のシード資金調達を実施 [（プレスリリース）](https://prtimes.jp/main/html/rd/p/000000010.000053336.html)
-  - [VRChat内でのイベントでの仮説検証](https://note.com/memoriavr/n/n319f34e53d4b)を経て、正式に事業化を決定し、資金調達を実施しました。
-- 2023/4: [メタバースマッチングアプリ Memotia](https://memotia.com/)をリリース
-  - 技術面で事業をリードしつつ、採用・マネジメントを行い、10名程度のエンジニアチームを組成しました。
-  - 2025/8時点で、集客コストを上回るLTVを獲得することに成功しています。
+- 2020/6: 長期インターン口コミサイトVoilをリリース。開発以外にも営業・キャリアアドバイザーを担当し黒字化を実現。
+- 2022春: メタバースマッチングアプリ事業を[VRChat内でのイベント](https://note.com/memoriavr/n/n319f34e53d4b)で仮説検証の末、事業化に成功。
+- 2022/10: [ANRI, basepartners等を引き受け先とした1億円のシード資金調達を実施](https://prtimes.jp/main/html/rd/p/000000010.000053336.html)。
+- 2023/4: [メタバースマッチングアプリ Memotia](https://memotia.com/)をリリース。技術面で事業をリードしつつ、採用・マネジメントを行い、10名程度のエンジニアチームを組成。
+- 2025/11現在: 集客コストを上回るLTVを獲得することに成功。累計数万人が利用。
 
-- ※ より詳細な資金調達状況や事業状況については、クローズドな状況でご共有とさせていただきます。
 
 ## 技術的活動
 ### サーバー
@@ -80,7 +112,7 @@
 <details>
 <summary>その他の経験</summary>
 - [AWS WAF](https://aws.amazon.com/jp/waf/)を用いた不正アクセスの排除
-- ECS on FargateのIaCのコードレビューとデプロイの立ち会い（メンバーが主担当でマネジメントをした形）
+- ECS on FargateのIaC構築のディレクション（自分以外のメンバーが主担当）
 - ElasticBeanstalkを利用したデプロイも3サービスほど自分が担当して実施（IaC導入以前）
 </details>
 
@@ -245,43 +277,8 @@
 
 </details>
 
-# 技術スタック
-## 言語
-- プロダクションのコードを書いた経験があるもの
-  - Ruby（7年）
-  - C#（4年）
-  - Kotlin（2年）
-  - Swift（2年）
-- そこそこ触ったことがあるもの
-  - Python（卒論の機械学習・Flaskでのサーバー構築・アルゴリズム実装等）
-  - JavaScript(ES6~)（RailsのStimulusを利用してプロダクションで記述）
-  - TypeScript（AWS SDKの記述に利用）
-- かじった程度
-  - Dart
-  - Go（プロダクションサーバーの一部がGoで実装されておりレビュー等を担当）
 
-## フレームワーク/ツール
-- プロダクションのコードを書いた経験があるもの
-  - Ruby on Rails（7年）
-  - Unity（4年）
-  - Jetpack Compose（2年）
-  - SwiftUI（2年）
-- かじった程度
-  - Flutter（アプリモックを作成した程度）
-  - Flask（卒論で利用）
-
-## クラウドインフラ
-- AWS（5年）
-  - EC2, ECS, Fargate, Lambda等の基本的なサービスの構築・運用経験
-  - CodePipeline, CodeBuild等を利用したCI構築
-  - AWS CDKでのIaC構築
-
-## その他
-- GitHub Actions（実務で利用）
-- Docker（日常的に利用）
-- Figma（半年ほど自身でUIデザインを作成）
-
-# アウトプット等
+# アウトプット
 ## 登壇
 
 | 時期 | イベント | スライド |
@@ -294,24 +291,24 @@
 | 2022/19 | [VRM勉強会](https://vrm.connpass.com/event/260117/) | [自作アプリにおける、キャリブレーションや表情設定とマルチプレイ同期](https://speakerdeck.com/dara_dara/vrmabatanokiyariburesiyonyabiao-qing-she-ding-tomarutipureitong-qi)
 
 ## 執筆
+
 ### 書籍
- [XR好きのための役立つTips集](https://www.amazon.co.jp/XR%E5%A5%BD%E3%81%8D%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E5%BD%B9%E7%AB%8B%E3%81%A4Tips%E9%9B%86-%E6%8A%80%E8%A1%93%E3%81%AE%E6%B3%89%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A0%A4-%E6%B5%B7%E6%96%97/dp/4295602043)
-  - MetaのAppLab（現在は廃止）にアプリをリリースするまでの手順をまとめて執筆
+
+-  [XR好きのための役立つTips集](https://www.amazon.co.jp/XR%E5%A5%BD%E3%81%8D%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E5%BD%B9%E7%AB%8B%E3%81%A4Tips%E9%9B%86-%E6%8A%80%E8%A1%93%E3%81%AE%E6%B3%89%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A0%A4-%E6%B5%B7%E6%96%97/dp/4295602043)
+    - MetaのAppLab（現在は廃止）にアプリをリリースするまでの手順をまとめて執筆
 
 ### Zenn
 - [TOKYO GAME SHOW（等ビッグイベント）における、デモ展示の技術責任者の心得](https://zenn.dev/flamers/articles/8609b9002d992a)
 - [CTO/エンジニアリングマネージャー 1年目の軌跡](https://zenn.dev/flamers/articles/924e3eb0c4d464)
 - Apple/Googleのサブスクリプション実装におけるサーバー通知の扱い [iOS版](https://zenn.dev/dara/scraps/c40d0d32822d5b), [Android版](https://zenn.dev/dara/scraps/23e3597c0755a1)
 - [トランザクション分離レベルについての実験](https://zenn.dev/dara/articles/22463be74ac059)
-  - プロダクションでトランザクション分離レベルが関連したエラーが発生し、その対応の際に調査
 
 ## その他
-- Meta Quest向けのカジュアルゲームをリリース [MagicBattlesVR](https://sidequestvr.com/app/4841/magicbattlesvr)
-  - 制作期間2ヶ月
+- Meta Quest向けのカジュアルゲームをリリース（制作期間2ヶ月） [MagicBattlesVR](https://sidequestvr.com/app/4841/magicbattlesvr)
 
 # 学歴/研究
 - 卒業論文 [画像キャプション技術を活用した橋梁点検用Webシステムの開発](https://www.jstage.jst.go.jp/article/jsceiii/3/J2/3_65/_article/-char/ja/)
-- 土木学会・インフラデータチャレンジ アイデア部門優秀賞受賞 [参考記事](https://www.kensetsunews.com/web-kan/315861)
+- 土木学会・インフラデータチャレンジ [アイデア部門優秀賞受賞](https://www.kensetsunews.com/web-kan/315861)
 
 # 資格等
 - 実用英語技能検定 準1級（2015年）
@@ -320,7 +317,8 @@
 # その他
 - 趣味で3曲を作曲 [YouTube](https://www.youtube.com/@%E3%81%93%E3%81%93%E3%81%BD%E3%82%93%E3%81%A0%E3%83%BC%E3%82%89)
 - Voicy公式ITビジネスニュースにおいて、2021/2~2022/1の1年間、火曜日パーソナリティを担当 [放送例](https://voicy.jp/channel/480/223983)
-# Appendix
+
+# 各種リンク
 - [X](https://x.com/3tdara)
 - [Facebook](https://www.facebook.com/kota.shidara)
 - [YOUTRUST](https://youtrust.jp/users/b51e8eab6c02363f95f36b1ccfce9af9)
