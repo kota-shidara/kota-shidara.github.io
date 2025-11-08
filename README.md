@@ -63,22 +63,13 @@
 ### サーバー
 - モデル設計やクライアントとの連携に関して、基本的に自分とメンバーで設計に携わり、実装やアサインしたissueのレビューは常に行っていました。
 
-<details>
-<summary>ポリモーフィックなモデル設計</summary>
+#### ポリモーフィックなモデル設計
+- UserとGuestの2つの認証方法を、重複したコード少なく実装するために、ポリモーフィックなモデル設計を行いました。
 
-- ユーザーとゲストの2つの認証手段があり、その2つのリソースで共通になるモデルが複数存在したため、ポリモーフィック関連付けを採用しました。
+#### Apple/Googleのサブスクリプション実装
+- iOSとAndroidのクライアントライブラリとサーバー通知の仕様を把握し、Rails/iOS/Androidの実装とディレクションを行いました。（実装は主にAndroidを担当）
+- リリース後の実データを見て、公式ドキュメントの理解通りデータが記録されているかを検証しました（[iOS版](https://zenn.dev/link/comments/4ea2cd272e3784), [Android版](https://zenn.dev/link/comments/1fa236836939ed)。
 
-</details>
-
-<details>
-<summary>Apple/Googleのサブスクリプション実装のディレクション</summary>
-
-- 公式ドキュメントを読み込み仕様を把握し、サーバー/iOS/Androidの実装をディレクションしました。
-  - [調査ログiOS版](https://zenn.dev/dara/scraps/c40d0d32822d5b)
-  - [調査ログAndroid版](https://zenn.dev/dara/scraps/23e3597c0755a1)
-- サーバーとiOSは実装はメンバーに依頼、Androidは実装も自分で行いました。
-- リリース後の実データを見て、公式ドキュメントの理解通りデータが記録されているかを検証し、まとめました。
-</details>
 
 <details>
 <summary>Appleでサインイン機能の実装のサーバーの調査と、ネイティブアプリの実装</summary>
