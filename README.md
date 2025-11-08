@@ -24,7 +24,7 @@
   - Kotlin（2年）
   - Swift（2年）
 - そこそこ触ったことがあるもの
-  - Python（卒論の機械学習, numpy, pandas, scikit-learn / Flask / アルゴリズム実装 / ROS 2）
+  - Python（卒論の機械学習、numpy、pandas、scikit-learn / Flask / アルゴリズム実装 / ROS 2）
   - Go（プロダクションでWebRTCを用いたサーバー構築を主にコードレビューとバグFIXで担当）
   - JavaScript（プロダクションでRailsのStimulusで実装等）
   - TypeScript（プロダクションでのAWS CDKで利用）
@@ -38,15 +38,15 @@
   - Jetpack Compose（2年）
   - SwiftUI（2年）
 - かじった程度
-  - Kubernetes（プライベートで学習。Pod, Service, Deployment等の簡単な理解）
+  - Kubernetes（プライベートで学習。Pod、Service、Deployment等の簡単な理解）
   - ROS 2（プライベートで学習）
   - Flutter（技術検証程度）
   - Flask（卒論で簡単なサーバーを構築）
 
 ## クラウドインフラ
 - AWS（5年）
-  - EC2, ECS, Fargate, Lambda等の基本的なサービスの構築・運用経験
-  - CodePipeline, CodeBuild等を利用したCI構築
+  - EC2、ECS、Fargate、Lambda等の基本的なサービスの構築・運用経験
+  - CodePipeline、CodeBuild等を利用したCI構築
   - AWS CDKでのIaC構築
 - GCP
   - プロダクションで利用するPub/Subの構築（Androidのサブスクサーバー通知）
@@ -54,7 +54,7 @@
 ## その他
 - GitHub Actions（実務で利用）
 - Docker（日常的に利用）
-- Figma（半年）
+- Figma（利用歴: 半年）
 
 # 株式会社Flamers（2019/8 - 2025/10）
 ## 活動概要
@@ -63,7 +63,7 @@
 --- | ---
 沿革 | 大学在学中に就活起点の課題感から共同創業 → 長期インターンサイトVoilを立ち上げ・黒字化達成 → メタバースマッチングアプリ「[Memotia](https://memotia.com/)」 を立ち上げ
 組織 | CTOに就任。エンジニア採用を主導し、10名規模のチームを組成
-資金調達 | プレシード〜プレシリーズAで累計2億円超を実施（[Heart Driven Fundよりプレシード調達](https://prtimes.jp/main/html/rd/p/000000001.000053336.html), [ANRI等から1億円のシード調達](https://prtimes.jp/main/html/rd/p/000000010.000053336.html)）
+資金調達 | プレシード〜プレシリーズAで累計2億円超を実施（[Heart Driven Fundよりプレシード調達](https://prtimes.jp/main/html/rd/p/000000001.000053336.html)、[ANRI等から1億円のシード調達](https://prtimes.jp/main/html/rd/p/000000010.000053336.html)）
 事業 | 集客コストを上回るLTVを獲得することに成功。累計数万人が利用（2025/11現在）
 
 ## サーバー/バックエンド
@@ -73,35 +73,35 @@
 
 ### Apple/Googleのサブスクリプション実装
 - サーバー通知・クライアント実装を横断して整備（実装は主にAndroidを担当し他はディレクション）。
-- リリース後の実データを検証し、データの信頼性を確認。[検証ログiOS版](https://zenn.dev/link/comments/4ea2cd272e3784), [Android版](https://zenn.dev/link/comments/1fa236836939ed)
+- リリース後の実データを検証し、データの信頼性を確認。[検証ログiOS版](https://zenn.dev/link/comments/4ea2cd272e3784)、[Android版](https://zenn.dev/link/comments/1fa236836939ed)
 
 ### AWS Lambdaを利用した並列化
 - Railsでのmini_magic処理が並列化できず、1分あたり150人の処理要件下で総処理時間が5分超に。ボトルネックをLambdaへ分離し並列化を実現。大規模プロモーションに備えた。
 
 ### その他（サーバー）
-- Sign in with Appleの実装とディレクションを担当（iOSを自分が実装, Railsをメンバーへ依頼）。[調査ログ](https://zenn.dev/dara/scraps/e659306593b8e7)
+- Sign in with Appleの実装とディレクションを担当（iOSを自分が実装、Railsをメンバーへ依頼）。[調査ログ](https://zenn.dev/dara/scraps/e659306593b8e7)
 - ユーザー同士のリアルタイムマッチメイキングの高速化。事前に相性をバッチ計算し、Redisに保存する機構の実装とディレクションを担当。
 
 ## インフラ
 ### AWS CDKでECS on EC2サーバー構築
 
-- AWS CDKを用いて、ECS on EC2でのサーバー構築と、CodePipeline, CodeBuildでのCI構築。
+- AWS CDKでECS on EC2のサーバーを構築し、CodePipeline／CodeBuildでCIを整備。
 - WebRTC通信を行っており、大量のUDPポートを公開する必要があった。Fargateの場合、NLBを構築してポート公開を実現する必要があり、リリースまでの期日を考慮すると学習コストの観点から実現可能性が低いと判断。EC2であればセキュリティグループでポートレンジを開放することで実現できるため、その手段を選択した。
 
 ### その他（インフラ）
-- [AWS WAF](https://aws.amazon.com/jp/waf/)を用いて、海外からの不正アクセスを切断。
+- [AWS WAF](https://aws.amazon.com/jp/waf/)を用いて、海外からの不正アクセスを遮断。
 - ECS on Fargate構成のRailsサーバーのIaC化をディレクション（実装はメンバーが担当）。
-- ElasticBeanstalkを利用したサーバー構築を3サービス主担当として実装（IaC導入以前）。
+- ElasticBeanstalkを利用したサーバー構築を3サービスを主担当として実装（IaC導入以前）。
 
 ## クライアント（iOS/Android/Unity）
 ### モバイルUIとUnityが共存する技術選定
 
-- モバイルUIとUnityの共存のため、Unity as a Libraryを選定・実装。[技術調査ログiOS版](https://zenn.dev/flamers/articles/3cd8f4781b4892), [Android版](https://zenn.dev/flamers/articles/aeadd5c721a0d6)
+- モバイルUIとUnityの共存のため、Unity as a Libraryを選定・実装。[技術調査ログiOS版](https://zenn.dev/flamers/articles/3cd8f4781b4892)、[Android版](https://zenn.dev/flamers/articles/aeadd5c721a0d6)
 - 既存でVRとPCプラットフォームで動作していたアプリを、2.5ヶ月でiOS/Androidともに審査を通過させ、リリースを実現。
 
 ### VRマルチプラットフォーム対応
-- Meta社のOculusに特化したSDKではなく、多様なVR機器に対応できるOpenXR, Unity XR Interaction Toolkitを選定。
-- 当時はVR開発環境も情報が少なく環境も変化していた中で、VR系の開発を行う知人やX上で見かけた方にDMを送りMTGを複数件設定して壁打ちした。
+- Meta社のOculusに特化したSDKではなく、多様なVR機器に対応できるOpenXR、Unity XR Interaction Toolkitを選定。
+- 当時はVR開発環境も情報が少なく環境も変化していた中で、VR系の開発を行う知人やX上で見かけた方にDMで連絡し、MTGを複数件設定して壁打ちを実施。
 
 ## 開発生産性・マネジメント
 
@@ -130,7 +130,7 @@
 ### 技術系社内勉強会の開催
 
 - 以下内容の勉強会を開催し講師を務めた。
-  - SOLID原則, 各種アルゴリズム（二分探索、DP、グラフアルゴリズム）,教師あり学習（scikit-learn）, GAS
+  - SOLID原則、各種アルゴリズム（二分探索、DP、グラフアルゴリズム）、教師あり学習（scikit-learn）、GAS
 
 ## UI/UX企画
 - マッチングアプリにおける企画からUIデザイン・実装までを行い、数値的な成果をあげた。
@@ -171,7 +171,7 @@
 ### Zenn
 - [TOKYO GAME SHOW（等ビッグイベント）における、デモ展示の技術責任者の心得](https://zenn.dev/flamers/articles/8609b9002d992a)
 - [CTO/エンジニアリングマネージャー 1年目の軌跡](https://zenn.dev/flamers/articles/924e3eb0c4d464)
-- Apple/Googleのサブスクリプション実装におけるサーバー通知の扱い [iOS版](https://zenn.dev/dara/scraps/c40d0d32822d5b), [Android版](https://zenn.dev/dara/scraps/23e3597c0755a1)
+- Apple/Googleのサブスクリプション実装におけるサーバー通知の扱い [iOS版](https://zenn.dev/dara/scraps/c40d0d32822d5b)、[Android版](https://zenn.dev/dara/scraps/23e3597c0755a1)
 - [トランザクション分離レベルについての実験](https://zenn.dev/dara/articles/22463be74ac059)
 
 ## その他
