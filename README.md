@@ -63,21 +63,20 @@
 --- | ---
 沿革 | 大学在学中に就活起点の課題感から共同創業 → 長期インターンサイトVoilを立ち上げ・黒字化達成 → メタバースマッチングアプリ「[Memotia](https://memotia.com/)」 を立ち上げ
 組織 | CTOに就任。エンジニア採用を主導し、10名規模のチームを組成
-資金調達 | プレシード~プレシリーズAで累計2億円超を実施（[Heart Driven Fundよりプレシード調達](https://prtimes.jp/main/html/rd/p/000000001.000053336.html), [ANRI等から1億円のシード調達](https://prtimes.jp/main/html/rd/p/000000010.000053336.html)
+資金調達 | プレシード〜プレシリーズAで累計2億円超を実施（[Heart Driven Fundよりプレシード調達](https://prtimes.jp/main/html/rd/p/000000001.000053336.html), [ANRI等から1億円のシード調達](https://prtimes.jp/main/html/rd/p/000000010.000053336.html)）
 事業 | 集客コストを上回るLTVを獲得することに成功。累計数万人が利用（2025/11現在）
 
 ## サーバー/バックエンド
 
 ### ポリモーフィック設計
-- User/Guestの二系統認証を、コード重複を最小で実装。
+- User/Guestの二系統認証を、コード重複を最小化して実装。
 
 ### Apple/Googleのサブスクリプション実装
 - サーバー通知・クライアント実装を横断して整備（実装は主にAndroidを担当し他はディレクション）。
 - リリース後の実データを検証し、データの信頼性を確認。[検証ログiOS版](https://zenn.dev/link/comments/4ea2cd272e3784), [Android版](https://zenn.dev/link/comments/1fa236836939ed)
 
 ### AWS Lambdaを利用した並列化
-- Railsでのmini_magic処理が並列化できず、要件である1分に150人がアクセスすると全体で5分を超える問題に直面していた。
-- ボトルネックをLambdaに切り出して並列実行を実現。大規模プロモーションに備えた。
+- Railsでのmini_magic処理が並列化できず、1分あたり150人の処理要件下で総処理時間が5分超に。ボトルネックをLambdaへ分離し並列化を実現。大規模プロモーションに備えた。
 
 ### その他（サーバー）
 - Sign in with Appleの実装とディレクションを担当（iOSを自分が実装, Railsをメンバーへ依頼）。[調査ログ](https://zenn.dev/dara/scraps/e659306593b8e7)
@@ -87,12 +86,12 @@
 ### AWS CDKでECS on EC2サーバー構築
 
 - AWS CDKを用いて、ECS on EC2でのサーバー構築と、CodePipeline, CodeBuildでのCI構築。
-- WebRTC通信を行いており、大量のUDPポートを公開する必要があった。Fargateの場合、NLBを構築してポート公開を実現する必要があり、リリースまでの期日を考慮すると学習コストの観点から実現可能性が低いと判断。EC2であればセキュリティグループでポートレンジを開放することで実現できるため、その手段を選択した。
+- WebRTC通信を行っており、大量のUDPポートを公開する必要があった。Fargateの場合、NLBを構築してポート公開を実現する必要があり、リリースまでの期日を考慮すると学習コストの観点から実現可能性が低いと判断。EC2であればセキュリティグループでポートレンジを開放することで実現できるため、その手段を選択した。
 
 ### その他（インフラ）
-- [AWS WAF](https://aws.amazon.com/jp/waf/)を用いて、海外からの不正アクセスを排除。
+- [AWS WAF](https://aws.amazon.com/jp/waf/)を用いて、海外からの不正アクセスを切断。
 - ECS on Fargate構成のRailsサーバーのIaC化をディレクション（実装はメンバーが担当）。
-- ElasticBeanstalkを利用したサーバー構築を3サービスを主担当として実装（IaC導入以前）。
+- ElasticBeanstalkを利用したサーバー構築を3サービス主担当として実装（IaC導入以前）。
 
 ## クライアント（iOS/Android/Unity）
 ### モバイルUIとUnityが共存する技術選定
@@ -160,7 +159,7 @@
 | 2023/1 | IDEACTIVE（初心者必見！XRビジネス＋開発スタートダッシュ講座） |  [初心者必見！Unityを用いた、cluster worldと自作VRアプリの作り方](https://speakerdeck.com/dara_dara/tesuto)
 | 2023/1 | （企画から登壇まで）[設計談義会](https://iwakenlab.connpass.com/event/271524/) | [日常と照らし合わせて理解するSOLID原則](https://speakerdeck.com/dara_dara/ri-chang-tozhao-rasihe-waseteli-jie-surusolidyuan-ze)
 | 2023/3 | [IwakenLabオールスターLT祭 ～XR好き40名大集結～](https://iwakenlab.connpass.com/event/270558/) | [素早いリリースと自身のCTO化を実現した爆速成長サイクルを振り返る](https://speakerdeck.com/dara_dara/iwakenlab-2023ltji)
-| 2022/19 | [VRM勉強会](https://vrm.connpass.com/event/260117/) | [自作アプリにおける、キャリブレーションや表情設定とマルチプレイ同期](https://speakerdeck.com/dara_dara/vrmabatanokiyariburesiyonyabiao-qing-she-ding-tomarutipureitong-qi)
+| 2022/9 | [VRM勉強会](https://vrm.connpass.com/event/260117/) | [自作アプリにおける、キャリブレーションや表情設定とマルチプレイ同期](https://speakerdeck.com/dara_dara/vrmabatanokiyariburesiyonyabiao-qing-she-ding-tomarutipureitong-qi)
 
 ## 執筆
 
