@@ -185,4 +185,5 @@
 - [Facebook](https://www.facebook.com/kota.shidara)
 - [YOUTRUST](https://youtrust.jp/users/b51e8eab6c02363f95f36b1ccfce9af9)
 - [Zenn](https://zenn.dev/dara)
+- [GitHub](https://github.com/kota-shidara)
 - [SpeakerDeck](https://speakerdeck.com/dara_dara)
