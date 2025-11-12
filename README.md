@@ -25,7 +25,7 @@
   - Swift / SwiftUI（2年）
 - そこそこ触ったことがあるもの
   - Python（卒論の画像キャプション、numpy、pandas、scikit-learn / Flask / アルゴリズム実装 / ROS 2）
-  - Golang（プロダクションでWebRTCを用いたサーバー構築を主にコードレビューとバグFIXで担当）
+  - Golang（プロダクションでWebRTCを用いたサーバー構築のレビューとBugFixを担当, プライベートでgRPCの学習）
   - JavaScript、TypeScript（プロダクションでRailsのStimulus、GAS、AWS CDKの実装で利用）
 - かじった程度
   - Dart / Flutter（技術検証程度）
