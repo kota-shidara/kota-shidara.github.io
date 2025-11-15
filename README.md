@@ -10,7 +10,8 @@
 - **チーム・プロジェクトマネジメントの経験**: CTO/EMとして10名規模の開発チームをマネジメント。全Issueのうち8割ほどを自身が作成・アサインし、コードレビューまで一貫して実施。サーバー/クライアント間でスムーズに開発が進むよう、タスクの順序や役割分担を設計したことは、自身の技術範囲の広さゆえに特に強みとなった。「開発が楽しい」という感情をメンバーが持ち続けられることを大事にし、離職もほぼゼロの明るいチームを維持した。
 - **経営視点**: 創業から資金調達まで経験し、経営者として6年間企業を運営してきた。VRデバイスの普及予測をもとに事業計画を作成しピッチを行ったほか、資金繰りと投資領域を踏まえた採用計画の立案、雇用終了の判断とそのコミュニケーションも担った。
 - **プロダクトへの関心と消費者視点**: 技術だけでなく、UI・UXにも関心が高い。他社アプリのリサーチを行い、自らFigmaでデザインした施策を実装し、数値的成果を挙げた。顧客インタビューや自分自身をユーザー視点に置き換える「憑依」のような観点を通じて、一次情報の取得を重視している。
-- **技術の掘り下げ**: 技術を深く理解するため、実験を通じて挙動を体感的に理解することを重視している。具体的には、以下のアウトプットがその一例である: [トランザクション分離レベル](https://zenn.dev/dara/articles/22463be74ac059)、[RailsのORM等の挙動整理・速度比較](https://zenn.dev/dara/articles/80b619ae38a543#preload%E3%81%A8eager_load%E3%81%AE%E5%AE%9F%E8%A1%8C%E9%80%9F%E5%BA%A6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)、[技術書理解（例としてEffective C#）](https://zenn.dev/dara/scraps/63854485fc53cf)
+- **技術の掘り下げ**: 技術を深く理解するため、実験を通じて挙動を体感的に理解することを重視している。具体的には、以下のアウトプットがその一例である:
+  - [トランザクション分離レベル](https://zenn.dev/dara/articles/22463be74ac059)、[RailsのORM等の挙動整理](https://zenn.dev/dara/articles/80b619ae38a543)、[技術書理解（例としてEffective C#）](https://zenn.dev/dara/scraps/63854485fc53cf)
 
 # 職歴（株式会社Flamers - CTO、2019/8~2025/10）
 CTOとしてメタバースマッチングアプリの開発をリード（Rails/Go/AWS/Unity/iOS/Android）
@@ -41,7 +42,7 @@ CTOとしてメタバースマッチングアプリの開発をリード（Rails
 - **チームへのコード生成AI活用促進**: DevinやClaude Codeの活用を促すミーティングを設定し、その場でハンズオンを実施するとともに、プロンプト例などをまとめた自作ドキュメントを配布。ほぼ全てのメンバーが利用し、さらにrulesの整備も活性化した。使用感の振り返り会を実施し、Devinに関してはフィードバック内容を開発元に送信した。
 - **開発合宿の企画**: リリース目標に対して開発がビハインドしている時期に、任意参加で休日に楽しく稼働してもらえるよう、合宿と銘打った企画を実施した。ランチを豪華なものとしたり、進捗をチーム全体に自慢するなどして、楽しいお祭のようなイベントだと感じてもらえるよう工夫した。
 - **社内勉強会の開催**: 以下内容の勉強会を開催し講師を務めた（リンクは発表資料）。
-  - [SOLID原則](https://speakerdeck.com/dara_dara/ri-chang-tozhao-rasihe-waseteli-jie-surusolidyuan-ze)、各種アルゴリズム（二分探索、DP、グラフアルゴリズム）、[教師あり学習（scikit-learn）](https://colab.research.google.com/drive/1NECwEotE8TD__Usse0vCexMSBXOWLXkh?usp=sharing)、[GAS](https://flamers.notion.site/GAS-3302cf0d4eae413b9d08d0d3cab58c66?source=copy_link)
+  - [SOLID原則](https://speakerdeck.com/dara_dara/ri-chang-tozhao-rasihe-waseteli-jie-surusolidyuan-ze)、[教師あり学習（scikit-learn）](https://colab.research.google.com/drive/1NECwEotE8TD__Usse0vCexMSBXOWLXkh?usp=sharing)、[GAS](https://flamers.notion.site/GAS-3302cf0d4eae413b9d08d0d3cab58c66?source=copy_link)、各種アルゴリズム（二分探索、DP、グラフアルゴリズム）
 
 ## UI/UX企画
 マッチングアプリにおける企画からFigmaでのUIデザイン・実装までを一貫して担当し、数値的な成果を挙げた。
@@ -110,8 +111,6 @@ CTOとしてメタバースマッチングアプリの開発をリード（Rails
 #### Zenn
 - [TOKYO GAME SHOW（等ビッグイベント）における、デモ展示の技術責任者の心得](https://zenn.dev/flamers/articles/8609b9002d992a)
 - [CTO/エンジニアリングマネージャー 1年目の軌跡](https://zenn.dev/flamers/articles/924e3eb0c4d464)
-- Apple/Googleのサブスクリプション実装におけるサーバー通知の扱い [iOS版](https://zenn.dev/dara/scraps/c40d0d32822d5b)、[Android版](https://zenn.dev/dara/scraps/23e3597c0755a1)
-- [トランザクション分離レベルについての実験](https://zenn.dev/dara/articles/22463be74ac059)
 
 ### その他
 - Meta Quest向けのカジュアルゲームをリリース（制作期間2ヶ月） [MagicBattlesVR](https://sidequestvr.com/app/4841/magicbattlesvr)
