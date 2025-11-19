@@ -50,10 +50,6 @@ CTOとしてメタバースマッチングアプリの開発をリード（Rails
 
 <img src="img/resume/talk_intention.png" width="90%">
 
-- **身分証提出率の向上**: 身分証提出に関するモチベーション設計を他社アプリを参考に企画した。段階的に提出を求める設計と、相手のメッセージをぼかした状態から閲覧できる導線を実装。結果、男性の提出率を48→54%に向上させ、女性は62→60%とほぼ横ばいで推移した。
-
-<img src="img/resume/identification_submission.png" width="90%">
-
 
 ---
 
