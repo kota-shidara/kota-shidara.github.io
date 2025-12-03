@@ -26,7 +26,6 @@ CTOとしてメタバースマッチングアプリの開発をリード（Rails
 - **AWS CDKを用いて、ECS on EC2構成のWebRTCサーバーを構築**: AWS CDKを用いて、ECS on EC2上で動作するGo言語製サーバーを構築。このサーバーはWebRTCを用いてユーザーの音声をリアルタイムにGoogleの文字起こしAPIへストリーミングするものであり、WebRTC通信のために大量のポートを開放してUDP通信を行う必要があった。FargateとEC2の選択肢の中で、構成のシンプルさとレイテンシの低さの観点からEC2を選択した。（ネットワークモードをhostとした。ネットワークモードがhostであることの[デメリット（ポート再マップ制限とセキュリティ）](https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/networking-networkmode-host.html)も、今回の要件においては許容可能と判断した。）
 - **定期実行を安定して実行する基盤の設計**: 構成変更前は、定期実行JobをRailsコンテナ上のcronで実行していた。このため、「同一Jobが重複実行される可能性があり、サーバーを水平スケーリングできない」「何かの理由でcronプロセスがゾンビ化するとJobが実行されない」の2つの課題があった。[sidekiq](https://github.com/sidekiq/sidekiq) / [sidekiq-cron](https://github.com/sidekiq-cron/sidekiq-cron)を導入し、前者の問題はキューイングの排他制御で、後者の問題はsidekiqのプロセスを（Railsコンテナとは別の新たな）コンテナのフォアグラウンドプロセスとすることで、死活監視とAWS側の自動再起動により解決を図った。このインフラ構成の変更とともにAWS CDKを用いたIaC化も行った。水平スケーリングが可能になったことで、その後の地上波放映時や大規模プロモーション時にも対応可能となった（メンバーと共に実施）。
 - **その他のインフラ関連の活動**:
-  - [AWS WAF](https://aws.amazon.com/jp/waf/)を用いて、海外からの不正アクセスを遮断した。
   - [AWS Elastic Beanstalk](https://aws.amazon.com/jp/elasticbeanstalk/)を利用して、3つのサーバー環境を構築した（IaC導入以前）。
 
 ## クライアント（iOS/Android/Unity）
